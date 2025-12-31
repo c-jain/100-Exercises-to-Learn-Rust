@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 267
-        length: 123
+        length: 10
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 267
         initialized_from_dependency: false
         encrypted_possible_answer: 0k+WcX/bTBzLKXb0NMg/DgpejTQJxNz1YkGj9/m14d93BZo//t1Zp2+9vbpSCy4dQO3R0ZZjFKEB+R6LL7aG2/oL+jZ2C89ZVMh4wpI01/uPje3izDHiLIvi8XVnHXfvrEpdc4t8WpMWczyCYZvQvVFYUdjjsd6QfCZpIn28XhE=
-        selected: true
+        selected: false
         status: Solved
     learner_created: false
   - name: Cargo.toml
@@ -23,5 +23,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Tue, 30 Dec 2025 18:42:58 UTC"
+  time: "Tue, 30 Dec 2025 18:45:57 UTC"
 record: -1
