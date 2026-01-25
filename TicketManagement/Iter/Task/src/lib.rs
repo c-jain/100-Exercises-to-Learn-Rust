@@ -45,5 +45,7 @@ impl TicketStore {
         self.tickets.push(ticket);
     }
 
-   /* TODO */}
+    pub fn iter(&self) -> std::slice::Iter<Ticket> {
+        self.tickets.iter()
+    }
 }
