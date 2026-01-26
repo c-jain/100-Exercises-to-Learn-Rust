@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 284
-        length: 10
+        length: 35
         placeholder_text: /* TODO */
         initial_state:
           length: 10
@@ -12,27 +12,27 @@ files:
         initialized_from_dependency: false
         encrypted_possible_answer: QYt1xTDzsBcDKpJY6Qr6CgRbPzXr1AAGyA0gEQhLhQw=
         selected: false
-        status: Unchecked
-      - offset: 357
-        length: 10
+        status: Solved
+      - offset: 382
+        length: 16
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 357
         initialized_from_dependency: false
         encrypted_possible_answer: QYt1xTDzsBcDKpJY6Qr6CtgFRUFNzPJGb+/CyJDc/qk=
-        selected: false
-        status: Unchecked
-      - offset: 487
-        length: 10
+        selected: true
+        status: Solved
+      - offset: 518
+        length: 18
         placeholder_text: /* TODO */
         initial_state:
           length: 10
           offset: 487
         initialized_from_dependency: false
         encrypted_possible_answer: Zrc3HcD1siiPGSK/JzKClSK+9Rfh0dYQ1l0U/9fVCjEPVFTA0NyMbSEei72JsFkx
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
     learner_created: false
   - name: Cargo.toml
     visible: false
@@ -40,5 +40,8 @@ files:
   - name: tests/tests.rs
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 26 Jan 2026 19:02:45 UTC"
 record: -1
