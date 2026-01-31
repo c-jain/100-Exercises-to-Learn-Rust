@@ -10,10 +10,11 @@ fn spawner() {
 }
 
 async fn example() {
-    /* TODO */
-    let non_send = Rc::new(1);
+    {
+        let non_send = Rc::new(1);
+        println!("{}", non_send);
+    }
     yield_now().await;
-    println!("{}", non_send);
 }
 
 fn main() {}
