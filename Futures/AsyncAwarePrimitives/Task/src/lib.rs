@@ -4,7 +4,7 @@
 ///  the testing code too, yes).
 ///
 /// Can you understand the sequence of events that can lead to a deadlock?
-use std::sync::mpsc; // TODO
+use tokio::sync::mpsc;
 
 pub struct Message {
     payload: String,
@@ -28,15 +28,15 @@ impl Message {
 /// channel to continue communicating with the caller.
 pub async fn pong(mut receiver: mpsc::Receiver<Message>) {
     loop {
-        if let Ok(msg) = receiver.recv() { // TODO
+        if let Some(msg) = receiver.recv().await {
             println!("Pong received: {}", msg.payload);
-            let (sender, new_receiver) = mpsc::channel(/* TODO */);
+            let (sender, new_receiver) = mpsc::channel(1);
             msg.response_channel
                 .send(Message {
                     payload: "pong".into(),
                     response_channel: sender,
                 })
-                /* TODO */
+                .await
                 .unwrap();
             receiver = new_receiver;
         }
