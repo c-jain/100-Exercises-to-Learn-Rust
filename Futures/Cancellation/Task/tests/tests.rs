@@ -33,6 +33,6 @@ mod tests {
 
         let buffered = handle.await.unwrap();
         let buffered = std::str::from_utf8(&buffered).unwrap();
-        assert_eq!(buffered, ""); // TODO
+        assert_eq!(buffered, "hefrthta"); // TODO
     }
 }
